@@ -15,3 +15,59 @@ p {
 img {
     border: 2px solid red;
 }
+
+#center {
+    background-color: red;
+    width: 960px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#left {
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    float: left;
+}
+
+#right {
+    background-color: blue;
+    height: 40px;
+    width: 100%;
+}
+
+#under {
+    background-color: purple;
+    width: 100%;
+    height: 40pnx;
+    clear: left;
+}
+
+#big {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.aa {
+    background-color: blue;
+    height: 50px;
+    float: left;
+    width: 100px;
+}
+
+.bb {
+    background-color: blue;
+    height: 50px;
+    float: right;
+    width: 100px;
+}
+
+.cc {
+    background-color: green;
+    height: 50px;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
