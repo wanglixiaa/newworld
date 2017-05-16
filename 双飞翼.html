@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #middle {
+            background-color: red;
+            height: 300px;
+            width: 100%;
+            float: left;
+            /* margin-left: 80px;
+            margin-right: 150px;这样写超出屏幕距离了，显示不出来*/
+        }
+        
+        #left {
+            background-color: blue;
+            ;
+            height: 200px;
+            width: 80px;
+            float: left;
+            margin-left: -100%;
+        }
+        
+        #right {
+            background-color: black;
+            height: 200px;
+            width: 150px;
+            float: left;
+            margin-left: -150px;
+        }
+        
+        #middle2 {
+            background-color: palevioletred;
+            margin: 0 150px 0 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="middle">
+        <div id="middle2">middle</div>
+    </div>
+    <div id="left">left</div>
+    <div id="right">right</div>
+</body>
+
+</html>
