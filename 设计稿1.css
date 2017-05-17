@@ -1,0 +1,18 @@
+#container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#head {
+    width: 980px;
+    background-color: purple;
+    height: 50px;
+}
+
+#tab li {
+    float: right;
+}
+
+#img {
+    background-image: url(1.jpg);
+}
