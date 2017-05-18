@@ -1,18 +1,59 @@
-#container {
-    width: 980px;
-    margin: 0 auto;
+body {
+    margin: 0;
 }
 
 #head {
-    width: 980px;
+    position: relative;
+    width: 100%;
     background-color: purple;
-    height: 50px;
+    height: 80px;
+}
+
+#none {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#head ul {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    margin: 0;
 }
 
 #tab li {
-    float: right;
+    float: left;
+    list-style: none;
+    margin: 0 0 0 28px;
+    font-family: 宋体；
+}
+
+#tab {
+    display: inline;
 }
 
 #img {
+    background-color: black;
     background-image: url(1.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: o;
+}
+
+#head img {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+#head span {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
 }
