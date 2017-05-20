@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    min-width: 980px;
 }
 
 #head {
@@ -35,15 +36,6 @@ body {
     display: inline;
 }
 
-#img {
-    background-color: black;
-    background-image: url(1.jpg);
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: o;
-}
-
 #head img {
     position: absolute;
     right: 10px;
@@ -56,4 +48,41 @@ body {
     position: absolute;
     left: 0px;
     bottom: 5px;
+}
+
+#img {
+    background-color: black;
+    background-image: url(1.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: o;
+    position: relative;
+}
+
+#text {
+    padding: 0px 10px 30px 10px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 350px;
+    opacity: 0.3;
+    /* filter: opacity=0, finishopacity=100, style=1, startx=0, starty=85, finishx=150, finishy=85;*/
+}
+
+h1 {
+    float: right;
+    display: inline;
+    font-size: 14px;
+    color: white;
+    opacity: 1;
+}
+
+p {
+    text-indent: 25px;
+    clear: right;
+    font-size: 12px;
+    color: white;
+    opacity: 1;
 }
