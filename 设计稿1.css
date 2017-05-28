@@ -56,13 +56,13 @@ body {
     height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: o;
+    margin: 0;
     position: relative;
 }
 
 #text {
     padding: 0px 10px 30px 10px;
-    background-color: black;
+    background: -webkit-linear-gradient(top, rgba(white 0.7), rgba(white 0.5), rgba(white 0));
     position: absolute;
     right: 0;
     bottom: 0px;
@@ -71,7 +71,7 @@ body {
     /* filter: opacity=0, finishopacity=100, style=1, startx=0, starty=85, finishx=150, finishy=85;*/
 }
 
-h1 {
+#text h1 {
     float: right;
     display: inline;
     font-size: 14px;
@@ -79,10 +79,126 @@ h1 {
     opacity: 1;
 }
 
-p {
+#text p {
     text-indent: 25px;
     clear: right;
     font-size: 12px;
     color: white;
     opacity: 1;
+}
+
+#main1 {
+    background-color: pink;
+    height: 480px;
+}
+
+#empty {
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.three {
+    background-color: white;
+    float: left;
+    margin: 10px 10px 10px 0;
+    width: 320px;
+    height: 353px;
+}
+
+.three p {
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+    text-indent: 20px;
+    text-align: center;
+    /*padding: 15px 30px 25px 30px;*/
+}
+
+.three img {
+    width: 300px;
+    height: 180px;
+    margin: 10px 10px;
+}
+
+#main2 {
+    background-color: white;
+}
+
+#photo {
+    background-image: url(23.png);
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-position: center;
+    margin: 0px auto;
+    position: relative;
+    top: -50px;
+}
+
+#main2 h1 {
+    font-size: 20px;
+    font-family: Century Gothic;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+#main2 p {
+    text-indent: 20px;
+    font-size: 14px;
+    color: black;
+    width: 600px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+#bottom1 {
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#bottom1 ul {
+    padding: 0;
+    margin: 0;
+}
+
+#bottom1 li {
+    display: inline;
+    color: white;
+    margin: 0px 0px 0px 30px;
+    list-style: none;
+}
+
+#bottom2 {
+    background-color: black;
+    height: 500px;
+    padding-left: 110px;
+    width: 100%;
+    position: relative;
+}
+
+#bottom2 ul {
+    float: left;
+    list-style: none;
+    color: white;
+    margin-right: 152px;
+    padding: 0;
+}
+
+#bottom2 li {
+    color: white;
+}
+
+#bottom2 img {
+    position: absolute;
+    bottom: 0;
+}
+
+#bottom2 h2 {
+    clear: left;
+    color: white;
+    text-align: center;
 }
