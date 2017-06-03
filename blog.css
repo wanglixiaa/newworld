@@ -66,6 +66,7 @@
         position: absolute;
         top: 20px;
         left: 0;
+        width: 710px;
     }
     
     .text {
@@ -75,7 +76,6 @@
         box-sizing: border-box;
         margin-bottom: 20px;
         position: relative;
-        top: 20px;
     }
     
     .text h1 {
@@ -127,7 +127,7 @@
         position: absolute;
         right: 0;
         top: 20px;
-        height: 1600px;
+        height: 1500px;
         width: 260px;
         /*background-color: yellow;
         overflow: hidden;*/
@@ -206,11 +206,8 @@
     }
     
     #list {
-        width: 710px;
         height: 40px;
-        margin: 40px 15px;
-        border-spacing: 10px;
-        border-collapse: separate;
+        margin: 20px auto;
         padding: 0;
     }
     
@@ -223,4 +220,73 @@
     
     #list a {
         text-decoration: none;
+    }
+    
+    #foot {
+        background-color: black;
+    }
+    
+    #foot1 {
+        border-bottom: 1px solid white;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    #foot1 li {
+        display: inline;
+        margin: 0 0 0 25px;
+        color: white;
+    }
+    
+    #foot2 {
+        height: 300px;
+    }
+    
+    #foot1 ul {
+        margin: 0 auto;
+        width: 300px;
+    }
+    
+    #foot2 li {
+        list-style: none;
+    }
+    
+    #foot2 ul {
+        float: left;
+        padding: 0;
+        margin: 0 80px 0 0;
+    }
+    
+    #foot2 h6 {
+        color: white;
+    }
+    
+    .link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    #picture {
+        background-color: black;
+        height: 80px;
+        text-align: center;
+    }
+    
+    #picture h5 {
+        color: white;
+        margin: 0 auto;
+        letter-spacing: 2px;
+        width: 90px;
+        text-align: center;
+    }
+    
+    #picture img {
+        position: absolute;
+        bottom: 0;
     }
