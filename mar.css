@@ -56,6 +56,17 @@
         }
     }
     
+    #left {
+        width: 710px;
+        margin-right: 20px;
+        background-color: pink;
+    }
+    
+    #right {
+        width: 260px;
+        background-color: green;
+    }
+    
     #foot {
         background-color: black;
         width: 100%;
@@ -108,7 +119,7 @@
     }
     
     #picture {
-        background-color: black;
+        background-color: blue;
         height: 80px;
         text-align: center;
     }
