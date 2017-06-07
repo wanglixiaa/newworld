@@ -67,7 +67,6 @@ body {
 
 #left {
     width: 710px;
-    background-color: blue;
     height: 1400px;
     position: absolute;
     top: 20px;
@@ -97,10 +96,25 @@ body {
 
 #manypictures {
     width: 100%;
-    background-color: red;
+    background-color: white;
     clear: left;
     padding: 20px;
     box-sizing: border-box;
+}
+
+#left-picture {
+    width: 330px;
+    float: left;
+}
+
+#middle-picture {
+    width: 160px;
+    margin-left: 340px;
+}
+
+#right-picture {
+    width: 160px;
+    float: right;
 }
 
 .letter {
@@ -129,8 +143,7 @@ body {
 /*第一张图*/
 
 #J {
-    width: 330px;
-    display: inline-block;
+    width: 100%;
 }
 
 .picture-bottom {
@@ -144,32 +157,66 @@ body {
     display: block;
 }
 
-
-/*第2张图*/
-
-#U {
+#left-bottom {
     width: 160px;
-    display: inline-block;
+    float: left;
 }
 
-.picture-bottom {
-    background-color: purple;
-    padding: 15px;
+.A {
+    width: 100%;
+    margin: 10px 0;
 }
 
-#U img {
-    width: 160px;
-    height: 100px;
+.A img {
+    width: 100%;
+    height: 150px;
     display: block;
+}
+
+.U {
+    width: 100%;
+    margin: 0 0 10PX 0;
+}
+
+.U img {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+#right-bottom {
+    width: 160px;
+    float: right;
+}
+
+#more {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#more a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
 }
 
 #right {
     width: 260px;
-    background-color: pink;
-    height: 1400px;
     position: absolute;
     top: 20px;
     right: 0;
+}
+
+#form {
+    width: 100%;
+    height: 45px;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 57px;
+    text-align: center;
 }
 
 
