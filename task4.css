@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    min-width: 980px;
+}
+
+#main {
+    width: 100%;
+    background-color: lightseagreen;
+    height: 1600px;
+}
+
+.container {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+#left {
+    width: 485px;
+    position: relative;
+    background-color: white;
+    height: 1000px;
+    left: 0;
+    top: 100px;
+}
+
+.right-container {
+    width: 485px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+
+#right {
+    width: 100%;
+    background-color: white;
+    height: 1000px;
+}
+
+#head-picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border: 10px solid lightseagreen;
+    background-color: black;
+    /* background-image: url(23.png);*/
+    position: absolute;
+    right: -85px;
+}
