@@ -19,33 +19,100 @@ body {
 
 #left {
     width: 485px;
-    position: relative;
     background-color: white;
     height: 1000px;
-    left: 0;
-    top: 100px;
-}
-
-.right-container {
-    width: 485px;
     position: absolute;
     top: 100px;
-    right: 0px;
+    left: 0;
 }
 
 #right {
-    width: 100%;
+    width: 485px;
     background-color: white;
     height: 1000px;
+    position: absolute;
+    top: 100px;
+    right: 0;
 }
 
 #head-picture {
     width: 160px;
     height: 160px;
-    border-radius: 80px;
+    border-radius: 90px;
     border: 10px solid lightseagreen;
-    background-color: black;
-    /* background-image: url(23.png);*/
+    background-image: url(23.png);
     position: absolute;
-    right: -85px;
+    z-index: 1;
+    left: 400px;
+    top: 30px;
+}
+
+#telephone {
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    border: 5px solid lightseagreen;
+    background-image: url(mao.jpg);
+    position: absolute;
+    z-index: 1;
+    left: 430px;
+    top: 370px;
+    text-align: center;
+}
+
+#eduacation {
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    border: 5px solid lightseagreen;
+    background-image: url(mao.jpg);
+    position: absolute;
+    z-index: 1;
+    left: 430px;
+    top: 600px;
+    text-align: center;
+}
+
+#experience {
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    border: 5px solid lightseagreen;
+    background-image: url(mao.jpg);
+    position: absolute;
+    z-index: 1;
+    left: 430px;
+    top: 850px;
+    text-align: center;
+}
+
+#left-information {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    text-align: right;
+}
+
+#p1 {
+    margin-bottom: 250px;
+}
+
+#p2 {
+    margin-bottom: 220px;
+}
+
+#p3 {
+    margin-bottom: 220px;
+}
+
+#right-information {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: left;
+}
+
+#d1 {
+    width: 200px;
+    margin-bottom: 140px;
 }
