@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function test() { //在定义函数
+            var message = "hello!"; //若message前面没有加上var就会变成全局变量
+        }
+        test(); //在调用test函数
+        alert(message); //错误！因为message是局部变量，当函数退出后message这个变量就被销毁，所以错误。
+    </script>
+</body>
+
+</html>
