@@ -10,11 +10,28 @@
 
 <body>
     <script>
-        function test() { //在定义函数
-            var message = "hello!"; //若message前面没有加上var就会变成全局变量
+        /* function test() { //在定义函数
+                                                                                                                                            var message = "hello!"; //若message前面没有加上var就会变成全局变量
+                                                                                                                                        }
+                                                                                                                                        test(); //在调用test函数
+                                                                                                                                        alert(message); //错误！因为message是局部变量，当函数退出后message这个变量就被销毁，所以错误。*/
+        /*  var message = "hellow";
+          alert(message == undefined);
+          alert(message);
+          //alert(age); //age未经声明，产生错误；
+          var car = null;
+          alert(typeof car);
+          if (message) {
+              alert("value is true");
+          }*/
+        /*var a = 0.05,
+            b = 0.25;
+        if (a + b == 0.3) {
+            alert("you got 0.3");
         }
-        test(); //在调用test函数
-        alert(message); //错误！因为message是局部变量，当函数退出后message这个变量就被销毁，所以错误。
+        alert(isNaN(10)); //false*/
+        var num1 = Number("");
+        alert(num1);
     </script>
 </body>
 
