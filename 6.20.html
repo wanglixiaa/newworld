@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>在使用 return 语句时，函数会停止执行，并返回指定的值。例如：</p>
+    <script>
+        sayHi(); //这是在调用此函数，若将这一行去除，下面的函数未被调用，不会执行
+        function sayHi() {
+            document.write("return 语句执行前。")
+            return;
+            alert("hellow" + name + "," + message); //这一行永远不会被调用，因为前面有return语句，函数停止执行，返回指定的值了已经
+        }
+    </script>
+</body>
+
+</html>
