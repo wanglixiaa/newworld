@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid pink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>第一个数:</td>
+            <td>
+                <input id="first" type="text" name="" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>第二个数:</td>
+            <td>
+                <input id="second" type="text" name="" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button type="button" onclick="myFirst()">+</button>
+                <button type="button" onclick="mySecond">-</button>
+                <button type="button" onclick="">*</button>
+                <button type="button" onclick="">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="result"></p>
+
+            </td>
+        </tr>
+        /*input标签的innerHTML是不显示的，我一开始用的inpute，后来用的p标签*/
+    </table>
+    <script>
+        // myFirst();不要这么写，上面onclick已经调用此函数了，这里写上就是第二次调用
+
+        function myFirst() {
+            var a, b, c;
+            a = document.getElementById("first").value; //此用法请记住.value
+            b = document.getElementById("second").value;
+            c = Number(a) + Number(b); //Number首字母大写 请注意
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+</body>
+
+</html>
