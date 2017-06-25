@@ -17,8 +17,12 @@
             var x = "";
             var time = new Date().getHours(); //！！！!
 
-            if (time < 20) {
-                x = "Good day!"
+            if (time < 10) {
+                x = "Good day";
+            } else if (time >= 10 && time < 20) {
+                x = "Good afternoon!";
+            } else {
+                x = "good evening!";
 
             }
             document.getElementById("dome").innerHTML = x; //getElementById里的E写成小写，执行错误，请注意大小写,此段话为啥写在if里和函数里都可以？
