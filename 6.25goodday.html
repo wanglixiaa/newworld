@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <p>当时间小于 20:00 时，生成问候 "Good day"：</p>
+    <button type="button" onclick="myFunction()">点击这里</button>
+    <p id="dome"></p>
+    <script>
+        function myFunction() {
+            var x = "";
+            var time = new Date().getHours(); //！！！!
+
+            if (time < 20) {
+                x = "Good day!"
+
+            }
+            document.getElementById("dome").innerHTML = x; //getElementById里的E写成小写，执行错误，请注意大小写,此段话为啥写在if里和函数里都可以？
+        }
+    </script>
+
+
+</body>
+
+</html>
