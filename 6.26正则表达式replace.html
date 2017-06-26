@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<p id="demo">请访问Microsoft</p>
+<button type="button" onclick="myFunction()"></button>
+
+<body>
+    <script>
+        function myFunction() {
+            var naa = document.getElementById("demo").innerHTML.replace(/Microsoft/i, "Runoob");
+            document.getElementById("demo").innerHTML = naa;
+        }
+    </script>
+</body>
+
+
+</html>
