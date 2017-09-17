@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>playing with dom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="main-heading">hello world!</h1>
+    <script>
+        var headingElement = document.getElementById("main-heading");
+        console.log(headingElement.innerHTML);
+        var newHeadingText = prompt("please provide a new heading:");
+        headingElement.innerHTML = newHeadingText;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>image gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body onload="alert('loaded!')">
+    <h1>Snapshots</h1>
+    <ul>
+        <li><a href="22.png" onclick="showPic(this);return false;" title="A fireworks display">Fireworks</a></li>
+        <li><a href="33.png" onclick="showPic(this);return false;" title="A cup of black coffee">Coffee</a></li>
+        <li><a href="23.png" onclick="showPic(this);return false;" title="A red,red rose">Rose</a></li>
+        <li><a href="55.png" onclick="showPic(this);return false;" title="The famous clock">Big ben</a></li>
+    </ul>
+    <img id="placeholder" src="placeholder.png" alt="my image gallery">
+    <p id="description">choose a image</p>
+    <script src="shoPpic.js">
+    </script>
+
+</body>
+
+</html>
