@@ -36,7 +36,9 @@ window.onload = function() {
     var testdiv = document.getElementById("testdiv");
     testdiv.appendChild(para);
     para.appendChild(txt1);
+
     para.appendChild(emphasis);
-    para.appendChild(txt3);
     emphasis.appendChild(txt2);
+    para.appendChild(txt3);
+
 }
