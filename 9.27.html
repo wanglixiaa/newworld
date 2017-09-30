@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jquery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="" rel="stylesheet">
+    <script src="jquery-3.2.1.js">
+    </script>
+    <script>
+        //window.onload = function() {
+        //    alert("aa");
+        // }
+        /* $(document).ready(function() {
+             var $cr = $("#cr");
+             var cr = $cr[0];
+             $cr.click(function() {
+                 if ($cr.is(":checked")) {
+                     alert("感谢您的支持！");
+                 }
+             })
+         });*/
+        $(document).ready(function() {
+            $(".abb").click(function() {
+                alert("aaaaa");
+            })
+
+            $(".abb").css("color", "red");
+        })
+    </script>
+
+</head>
+
+<body>
+    <input type="checkbox" id="cr" value="">
+    <label for="cr">我已阅读了上面的制度</label>
+    <p class="abb">hahahah</p>
+</body>
+
+</html>
