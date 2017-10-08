@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jquery-3.2.1.js">
+    </script>
+</head>
+
+<body>
+    <select id="single">
+<option value="">选择1号</option>
+<option value="">选择2号</option>
+<option value="">选择3号</option>
+    
+</select>
+    <select id="multiple" multiple="multiple" style="height:120px;">
+<option value="" selected="selected">选择1号</option>
+<option value="">选择2号</option>
+<option value="">选择3号</option>
+    <option value="">选择4号</option>
+    <option value="" selected="selected">选择5号</option>
+</select>
+    <input type="radio" name="" value="radio1">单选1
+    <input type="radio" name="" value="radio2">单选2
+    <input type="radio" name="" value="radio3">单选3
+    <p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1.</a></p>
+    <p><a href="#" class="tooltip" title="这是我的超链接提示2.">提示2.</a></p>
+    <p><a href="#" title="这是自带提示1.">提示1.</a></p>
+    <p><a href="#" title="这是自带提示2.">提示2.</a></p>
+    <p>xxxxxx</p>
+    <script>
+        $("#single").val("选择2号");
+        $(":radio").val(["radio2"]);
+        $("#multiple").val(["选择2号", "选择3号"]);
+        $("a.tooltip").mouseover(function() {
+            this.myTitle = this.title;
+            this.title = "";
+            var tooltip = "<div id='tooltip'>" + this.myTitle + "</div>";
+            $("body").append(tooltip);
+            $("#tooltip")
+                .css({
+                    "top": e.pageY + "px",
+                    "left": e.pageX + "px"
+                }).show("fast");
+        }).mouseout(function() {
+            $("#tooltip").remove();
+            this.title = this.myTitle;
+        }).mousemove(function() {
+
+        });
+    </script>
+</body>
+
+</html>
