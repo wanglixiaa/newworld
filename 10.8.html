@@ -8,6 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="jquery-3.2.1.js">
     </script>
+    <style>
+        .highlight {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,22 +23,38 @@
         </div>
     </div>
     <script>
-        /* $(function() {
-                                    $("#pane1 h5.head").bind("click", function() {
-                                        if ($(this).next().is(":visible")) {
-                                            $(this).next().hide();
-                                        } else {
-                                            $(this).next().show();
-                                        }
-                                    })
-                                });*/
-        $(function() {
-            $("#pane1 h5.head").bind("mouseover", function() {
+        /*  $(function() {
+                                                                                                                                                    $("#pane1 h5.head").bind("click", function() {
+                                                                                                                                                        if ($(this).next().is(":visible")) {
+                                                                                                                                                            $(this).next().hide();
+                                                                                                                                                        } else {
+                                                                                                                                                            $(this).next().show();
+                                                                                                                                                        }
+                                                                                                                                                    })
+                                                                                                                                                });
+                                                                                                                                                /*$(function() {
+                                                                                                                                                    $("#pane1 h5.head").bind("mouseover", function() {
+                                                                                                                                                        $(this).next().show();
+                                                                                                                                                    }).bind("mouseout", function() {
+                                                                                                                                                        $(this).next().hide();
+                                                                                                                                                    })
+                                                                                                                                                })*/
+        /*$(function() {
+            $("#pane1 h5.head").toggle(function() {
                 $(this).next().show();
-            }).bind("mouseout", function() {
+            }, function() {
                 $(this).next().hide();
             })
-        })
+        });*/
+        $(function() {
+            $("#pane1 h5.head").hover(function() {
+                $(this).addClass("highlight");
+                $(this).next().show();
+            }, function() {
+                $(this).removeClass("highlight");
+                $(this).next().hide();
+            })
+        });
     </script>
 </body>
 
