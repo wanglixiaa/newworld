@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jquery-3.2.1.js">
+    </script>
+</head>
+
+<body>
+    <div id="pane1">
+        <h5 class="head">什么是jquery</h5>
+        <div class="content">
+            黑色飞虎废话文化覅网速回复说覅u恶回发挥可是服务和服务和服务和服务恢复回复和复活赛复活赛复活赛符号和符合复合符合
+        </div>
+    </div>
+    <script>
+        /* $(function() {
+                                    $("#pane1 h5.head").bind("click", function() {
+                                        if ($(this).next().is(":visible")) {
+                                            $(this).next().hide();
+                                        } else {
+                                            $(this).next().show();
+                                        }
+                                    })
+                                });*/
+        $(function() {
+            $("#pane1 h5.head").bind("mouseover", function() {
+                $(this).next().show();
+            }).bind("mouseout", function() {
+                $(this).next().hide();
+            })
+        })
+    </script>
+</body>
+
+</html>
