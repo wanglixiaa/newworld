@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jquery-3.2.1.js">
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        外层div
+        <span>内层span元素</span> 外层div
+    </div>
+    <div id="msg">
+
+    </div>
+    <script>
+        $(function() {
+            $("span").bind("click", function() {
+                var txt = $("#msg").html() + "<p>内层span元素被单击</p>";
+                $("#msg").html(txt);
+            })
+        })
+    </script>
+</body>
+
+</html>
