@@ -8,15 +8,60 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="jquery-3.2.1.js">
     </script>
+    <style>
+        #panel {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #0050d0;
+            background-color: #96e555;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
     <a href="">ccccc</a>
+    <div id="panel">
+
+    </div>
     <script>
         $("a").mousedown(function(e) {
             alert(e.which)
 
         })
+        $(function() {
+            $("#panel").css("opacity", "0.5");
+            $("#panel").click(function() {
+                $(this).animate({
+                    left: "400px",
+                    height: "200px",
+                    opacity: "1"
+
+                }, 3000).delay(1000).animate({
+                    top: "200px",
+                    width: "200px"
+                }, 3000, function() {
+                    $(this).css("border", "5px solid blue");
+                })
+            });
+        });
+        /* $(function() {
+             $("#panel").hover(function() {
+                 $(this).stop(true).animate({
+                     height: "150px"
+                 }, 1000).animate({
+                     width: "300"
+                 }, 300)
+             }, function() {
+                 $(this).stop(true).animate({
+                         height: "22"
+                     }, 1000)
+                     .animate({
+                         width: "60"
+                     }, 1000);
+             })
+         })*/
     </script>
 </body>
 
