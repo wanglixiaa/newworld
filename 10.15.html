@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jquery-3.2.1.js">
+    </script>
+    <style>
+        h2,
+        .highlight_tip,
+        .change_btn {
+            display: inline;
+        }
+        
+        .v_content li {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="v_show">
+        <div class="v_caption">
+            <h2 class="cartoon" title="卡通动漫">卡通动漫</h2>
+            <div class="highlight_tip">
+                <span class="current">1</span><span>2</span><span>3</span><span>4</span>
+
+            </div>
+            <div class="change_btn">
+                <span class="prev">上一页</span>
+                <span class="next">下一页</span>
+            </div>
+            <em><a href="#">更多>></a></em>
+        </div>
+        <div class="v_content">
+            <div class="v_content_list">
+                <ul>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+                    <li>
+                        <a href="#"><img src="22.png" alt="海贼王"></a>
+                        <h4><a href="#">海贼王</a></h4><span>播放：<em>28.222</em></span></li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        $("span.next").click(function() {
+            var $parent = $(this).parents("div.v_show");
+            var v_show = $parent.find("div.v_content_list");
+            var $v_content = $parent.find("div.v_content");
+        })
+    </script>
+</body>
+
+</html>
